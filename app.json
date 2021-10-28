@@ -1,0 +1,42 @@
+{
+    "name": "Forwarder botto",
+    "description": "A tele based Forwarder bot",
+    "logo": "https://telegra.ph//file/ae493ce1d45e04044e9dc.jpg",
+    "keywords": [
+        "telegram",
+        "telethon-bot",
+        "forwarder"
+    ],
+    "env": {
+        "API_HASH": {
+            "description": "ur Api Hash",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "ur Api Id",
+            "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Bot Token That You Got From @botfather",
+            "value": ""
+        },
+        "DB_URL": {
+            "description": "Get from mongodb.com",
+            "value": ""
+        },
+        "GC_ID": {
+            "description": "connected grp id without -100",
+            "value": ""
+        },
+        "CH_ID": {
+            "description": "channel id without -100",
+            "value": ""
+        }
+       },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
+        
