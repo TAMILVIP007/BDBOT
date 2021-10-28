@@ -6,8 +6,8 @@ from BD import DEVS
 async def lmoa(event):
    if event.sender.id in DEVS:
       try:
-         for y in [-1001176306346, -1001686303934]
+         for y in [-1001176306346, -1001686303934]:
              x = await event.get_reply_message()
              await tbot.send_message(y,x)
-      except Exception as lol
+      except Exception as lol:
              await event.reply(f'Error {lol}')
