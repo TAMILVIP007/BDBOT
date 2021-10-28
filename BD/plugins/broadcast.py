@@ -10,4 +10,4 @@ async def lmoa(event):
              await tbot.send_message(y,x)
              await event.reply('**Successfully Braodcasted**')
       except Exception as lol:
-             await event.client.send_message(-1001602095999, f'Error {lol}')
+             await event.client.send_message(-1001686303934, f'Error {lol}')
