@@ -31,6 +31,14 @@
         "CH_ID": {
             "description": "channel id without -100",
             "value": ""
+        },
+        "LOG_SPAM": {
+            "description": "log grp id with -100",
+            "value": ""
+        },
+        "SUPPORT": {
+            "description": "Support grp username without @",
+            "value": ""
         }
        },
     "buildpacks": [
