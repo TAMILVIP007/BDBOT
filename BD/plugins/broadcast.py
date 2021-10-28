@@ -8,5 +8,6 @@ async def lmoa(event):
          for y in [-1001176306346, -1001686303934]:
              x = await event.get_reply_message()
              await tbot.send_message(y,x)
+             await event.reply('**Successfully Braodcasted**')
       except Exception as lol:
              await event.reply(f'Error {lol}')
