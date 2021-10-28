@@ -1,6 +1,5 @@
-from . import *
 from telethon.sync import events
-from BD import DEVS
+from BD import DEVS, tbot
 
 @tbot.on(events.NewMessage(pattern="[/!]bcast"))
 async def lmoa(event):
