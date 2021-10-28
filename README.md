@@ -13,7 +13,7 @@ A simple Bot Based on telethon for [Blood donor grp](https://t.me/TamilBloodBank
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FTAMILVIP007%2FBDBOT&envs=API_KEY%2CAPI_HASH%2CTOKEN%2CDB_URL)
 
 ## CREDITS
-☛   [Amarnath](https://GitHub.com/amarnayhcjd)  - <b>Dev</b><br>
+☛   [Amarnath](https://GitHub.com/amarnathcjd)  - <b>Dev</b><br>
 ☛   [Lucifer](https://GitHub.com/lucifeermorningstar)  - <b>For telebase</b><br>
 ☛   [me](https://GitHub.com/tamilvip007)  - <b>For this crap</b>
 
