@@ -6,4 +6,4 @@ from telethon import Button
 
 @tbot.on(events.NewMessage(pattern="[/!]start"))
 async def lol(event):
-  await tbot.send_message(event.chat_id, f'__Hey {(event.sender.first_name)}.\n I am a forwader bot made for k__.')
+  await tbot.send_message(event.chat_id, f'__Hey {(event.sender.first_name)}.\n I am a forwader bot made for [Group](t.me/{CHANNEL})__.')
