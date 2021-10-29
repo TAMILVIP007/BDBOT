@@ -5,7 +5,7 @@ on:
     schedule:
       - cron: "0 */6 * * *"
     push:
-      branches: [ master ]
+      branches: [ main ]
 
       
 env:
@@ -39,7 +39,7 @@ jobs:
        - name: cloning repo and install
          continue-on-error: true
          run: |
-           git clone https://github.com/Tamilvip007/bdbot.git bot && cd bot && pip3 install -r requirements.txt
+           git clone https://github.com/Tamilvip007/BDBOT.git bot && cd bot && pip3 install -r requirements.txt
            pwd
        - name: Running
          timeout-minutes: 350
