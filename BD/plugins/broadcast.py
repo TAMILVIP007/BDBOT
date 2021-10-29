@@ -1,5 +1,6 @@
 from telethon.sync import events
 from BD import DEVS, tbot
+import speedtest
 
 @tbot.on(events.NewMessage(pattern="[/!]bcast"))
 async def lmoa(event):
@@ -11,3 +12,15 @@ async def lmoa(event):
              await event.client.send_message(event.chat_id, '**Successfully Braodcasted**', reply_to=event)
       except Exception as lol:
              await event.client.send_message(-1001686303934, f'Error {lol}')
+
+            
+@tbot.on(events.NewMessage(pattern="[/!]speedtest"))
+async def test(event):
+   if event.sender.id in DEVS:
+      lol=await event.edit('`Processing....`')
+      s = speedtest.Speedtest()
+      s.download()
+      s.upload()
+      x=s.results.share()
+      await lol.delete()
+      await event.reply(file=x)
