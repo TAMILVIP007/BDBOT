@@ -15,5 +15,7 @@ LOG_SPAM = os.environ.get("LOG_SPAM", None)
 SUPPORT = os.environ.get("SUPPORT", None)
 CHANNEL = os.environ.get("CHANNEL", None)
 START_IMG = os.environ.get("START_IMG", None)
+DB_URL = os.environ.get("DB_URL", None)
+BOT_ID = os.environ.get("BOT_ID", None)
 
 tbot = TelegramClient('botto', API_KEY, API_HASH).start(bot_token=TOKEN)
