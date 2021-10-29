@@ -1,0 +1,51 @@
+name : BDBOT
+
+
+on:
+    schedule:
+      - cron: "0 */6 * * *"
+    push:
+      branches: [ master ]
+
+      
+env:
+  API_KEY: ${{secrets.API_KEY}}
+  API_HASH: ${{secrets.API_HASH}}
+  TOKEN: ${{secrets.TOKEN}}
+  CH_ID: ${{secrets.CH_ID}}
+  GC_ID: ${{secrets.GC_ID}}
+  SUPPORT: ${{secrets.SUPPORT}}
+  CHANNEL: ${{secrets.CHANNEL}}
+  START_IMG: ${{secrets.START_IMG}}
+  DEVS: ${{secrets.DEVS}}  
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+       - uses: actions/checkout@v2
+       - uses: styfle/cancel-workflow-action@0.9.0
+       - name: Set up Python 3.9
+         uses: actions/setup-python@v2.2.2
+         with:
+           python-version: 3.9
+           
+       - name: Cancel Previous Runs
+         uses: styfle/cancel-workflow-action@0.9.1
+         with:
+              access_token: ${{ github.token }}
+
+       - name: cloning repo and install
+         continue-on-error: true
+         run: |
+           git clone https://github.com/Tamilvip007/bdbot.git bot && cd bot && pip3 install -r requirements.txt
+           pwd
+       - name: Running
+         timeout-minutes: 350
+         continue-on-error: true
+         run: |
+           curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -
+           pwd
+           cd bot
+           python3 -m BD
