@@ -10,7 +10,7 @@ async def lol(event):
   
 @tbot.on(events.CallbackQuery(pattern=r"fk"))
 async def lmao(event):
-  await event.edit('Lol Nothing to describe on help\n\n\n **DEV CMDS**\n `/bcast` To broadcast a msg', button=[Button.inline('Back', data='lmao')])
+  await event.edit('Lol Nothing to describe on help\n\n\n **DEV CMDS**\n `/bcast` To broadcast a msg')
 
 @tbot.on(events.CallbackQuery(pattern=r"lmao"))
 async def nigga(event):
