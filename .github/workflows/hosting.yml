@@ -18,6 +18,9 @@ env:
   CHANNEL: ${{secrets.CHANNEL}}
   START_IMG: ${{secrets.START_IMG}}
   DEVS: ${{secrets.DEVS}}  
+  DB_URL: ${{secrets.DB_URL}}
+  BOT_ID: ${{secrets.BOT_ID}}  
+  LOG_SPAM: ${{secrets.LOG_SPAM}}
   
 jobs:
   build:
