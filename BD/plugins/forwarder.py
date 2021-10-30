@@ -3,7 +3,7 @@ from telethon.sync import events
 
 @tbot.on(events.NewMessage(incoming=True))
 async def x(e):
- if e.chat.id == GC_ID and e.sender.id == CH_ID:
+ if e.chat.id == 1686303934 and e.sender.id == 1602095999:
   try:
     for x in [-1001176306346, -1001443691244]:
         await e.forward_to(x)
