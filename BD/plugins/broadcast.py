@@ -23,6 +23,7 @@ async def test(event):
           s.download()
           s.upload()
           x=s.results.share()
-          await lol.edit(file=x)
+          await lol.delete()
+          await event.respond(file=x)
       except Exception as lmao:
           await event.client.send_message(-1001686303934, f'Error {lmao}')
