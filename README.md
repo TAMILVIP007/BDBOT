@@ -14,7 +14,7 @@ A simple Bot Based on telethon for [Blood donor grp](https://t.me/TamilBloodBank
 
 ## CREDITS
 ☛   [Amarnath](https://GitHub.com/amarnathcjd)  - <b>Dev</b><br>
-☛   [Imsaravanakrish]https://GitHub.com/Imsaravanakrish)  - <b>Dev</b><br>
+☛   [Imsaravanakrish](https://GitHub.com/Imsaravanakrish)  - <b>Dev</b><br>
 ☛   [Lucifer](https://GitHub.com/lucifeermorningstar)  - <b>For telebase</b><br>
 ☛   [me](https://GitHub.com/tamilvip007)  - <b>For this crap</b>
 
