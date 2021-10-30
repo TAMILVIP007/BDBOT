@@ -1,5 +1,6 @@
 from BD import tbot, GC_ID, CH_ID
 from telethon.sync import events
+from BD.plugins.db import db
 
 @tbot.on(events.NewMessage(incoming=True))
 async def x(e):
