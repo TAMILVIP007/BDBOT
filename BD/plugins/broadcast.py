@@ -17,10 +17,13 @@ async def lmoa(event):
 @tbot.on(events.NewMessage(pattern="[/!]speedtest"))
 async def test(event):
    if event.sender.id in DEVS:
-      lol=await event.edit('`Processing....`')
-      s = speedtest.Speedtest()
-      s.download()
-      s.upload()
-      x=s.results.share()
-      await lol.delete()
-      await event.reply(file=x)
+      try:
+            lol=await event.edit('`Processing....`')
+             s = speedtest.Speedtest()
+             s.download()
+             s.upload()
+             x=s.results.share()
+             await lol.delete()
+             await event.reply(file=x)
+      except Exception as lol:
+             await event.client.send_message(-1001686303934, f'Error {lol}'
