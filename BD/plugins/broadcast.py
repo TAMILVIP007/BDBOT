@@ -18,11 +18,11 @@ async def lmoa(event):
 async def test(event):
    if event.sender.id in DEVS:
       try:
-            lol=await event.reply('`Processing....`')
-            s = speedtest.Speedtest()
-            s.download()
-            s.upload()
-            x=s.results.share()
-            await lol.edit(file=x)
+          lol=await event.reply('`Processing....`')
+          s=speedtest.Speedtest()
+          s.download()
+          s.upload()
+          x=s.results.share()
+          await lol.edit(file=x)
       except Exception as lmao:
-            await event.client.send_message(-1001686303934, f'Error {lmao}')
+          await event.client.send_message(-1001686303934, f'Error {lmao}')
