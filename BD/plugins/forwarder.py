@@ -9,4 +9,4 @@ async def x(e):
     for x in ids:
         await e.forward_to(x)
   except Exception as f:
-        await event.reply(f'Error {f}')
+        await e.reply(f'Error {f}')
