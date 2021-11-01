@@ -4,7 +4,7 @@ from BD import SUPPORT, CHANNEL, START_IMG
 from telethon import Button
 
 
-@tbot.on(events.NewMessage(pattern="start"))
+@tbot.on(events.NewMessage(pattern="[/!]start"))
 async def lol(event):
   await tbot.send_message(event.chat_id, f'**Hey {(event.sender.first_name)}.\n I am a forwader bot made for [Channel](t.me/{CHANNEL}).**', file=START_IMG, buttons=[[Button.url('Support',f't.me/{SUPPORT}'), Button.url('Channel',f't.me/{CHANNEL}')], [Button.inline('Help',data="fk")]],reply_to=event)
   
